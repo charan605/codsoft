@@ -1,1 +1,28 @@
+while True:
+
+    print ("~~ Welcome to Charan's Calculator~~")
+    num1 = float(input("Enter a number here: "))
+    num2 = float(input("Enter another number here: "))
+    print ("""
+    Press + for addition 
+    Press - for subtraction
+    Press * for multiplication
+    Press / for division """)
+    print("press q or Q to exit")
+    choice = (input("enter your operator: "))
+    
+    
+    if choice == '+' :
+        sum = num1+num2
+        print ("the addition of the given two numbers is",sum)
+    elif choice == '-' :
+        print ("The subtraction of the given two numbers is",num1-num2)
+    elif choice == '*':
+        print ("The multiplication of the given two numbers is",num1*num2)
+    elif choice == '/':
+        print ("The division of the given two numbers is",num1/num2)
+    elif choice == "Q" or "q":
+         break
+    else:
+        print ("Invalid Input from the User")
 
